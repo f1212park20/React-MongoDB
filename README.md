@@ -48,8 +48,7 @@
 <div align='center'>
   <h1>3.수정 코드</h1>
   <table>
-    <tr>packjson.js 파일에  uploads 파일 생성 코드 추가</tr>
-    <tr>server.js 파일에 </tr>
+    <tr>packjson.js 파일에  uploads 파일 생성 코드 추가 </tr>
     <td>
       const Storage = multer.diskStorage({
       destination: function (req, file, cb) {</br>  
