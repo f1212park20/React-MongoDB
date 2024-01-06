@@ -42,6 +42,9 @@
       "eject": "react-scripts eject" </br>     
       },
     </td>
+    <td>
+      설명:npm run server와 npm start를 동시에 실행
+    </td>    
   </table>
 </div>
 
@@ -64,6 +67,7 @@
       },</br>  
     });
     </td>
+    
   </table>
 </div>
 
