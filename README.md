@@ -13,3 +13,33 @@
   <img src="https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white">
   <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 </div>
+
+
+<div align='center'>
+  <h1>1.설치명령어</h1>
+  <table>
+    <tr>
+      <td>npm install bootstrap</td>
+      <td>npm install axios</td>
+      <td>npm install express mysql body-parser multer</td>
+      <td>npm install mongodb</td>
+    </tr>
+  </table>  
+</div>
+
+<div>
+  <h1>2. 설정</h1>
+  <table>
+    <tr>packjson.js 파일 설정</tr>
+    <td>
+      "scripts": { 
+      "start": "react-scripts start", </br>  
+      "build": "react-scripts build", </br> 
+      "dev": "concurrently \"npm run server\" \"npm start\"", </br>  
+      "server": "node server.js",</br>
+      "test": "react-scripts test",</br>
+      "eject": "react-scripts eject" </br>     
+      },
+    </td>
+  </table>
+</div>
