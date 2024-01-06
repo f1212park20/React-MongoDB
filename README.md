@@ -33,7 +33,7 @@
   <table>
     <tr>packjson.js 파일 설정</tr>
     <td>
-      "scripts": { 
+      "scripts": { </br>  
       "start": "react-scripts start", </br>  
       "build": "react-scripts build", </br> 
       "dev": "concurrently \"npm run server\" \"npm start\"", </br>  
