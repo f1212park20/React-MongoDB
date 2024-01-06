@@ -65,3 +65,17 @@
     </td>
   </table>
 </div>
+
+<div align='center'>
+  <h1>4.기본지식</h1>
+  <table>
+    <tr>restful api</tr>
+    <td>
+      GET:화면단 출력  
+      POST:데이터 전송</br>  
+      PUT: 데이터 업데이트</br>  
+      DELETE:데이터 삭제</br>  
+    </td>
+  </table>
+</div>
+
