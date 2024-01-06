@@ -18,13 +18,11 @@
 <div align='center'>
   <h1>1.설치명령어</h1>
   <table>
-    <tr>
-     
+    <tr>     
         <td>npm install bootstrap</td>
         <td>npm install axios</td>
         <td>npm install express mysql body-parser multer</td>
-        <td>npm install mongodb</td>
-       
+        <td>npm install mongodb</td>       
     </tr>
   </table>  
 </div>
