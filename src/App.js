@@ -48,32 +48,20 @@ function ImageUpload() {
       // 새로운 일기 등록
       await axios.post('http://localhost:5000/api/upload', formData);
       
-
+      fetchDiaries(); // 업로드 후 목록을 다시 불러옴
       // 입력 필드 초기화
       setTitle('');
       setContent('');
       setImage(null);
-      fetchDiaries(); // 업로드 후 목록을 다시 불러옴
+      
     } catch (error) {
       console.error('Error submitting diary:', error);    }
   };
 
-   const handleEdit = async () => {
-    try {
-      const formData = new FormData();
-      formData.append('image', image);
-      formData.append('title', title);
-      formData.append('content', content);
-
-      await axios.put(`http://localhost:5000/api/upload/${showModal.id}`, formData);
-
-      // 수정 후 목록 다시 불러오기
-      fetchDiaries();
-      // 수정 상태 초기화     
-      handleCloseModal();
-    } catch (error) {
-      console.error('이미지 수정 중 오류 발생:', error);
-    }
+   const handleEditClick = (diary) => {
+    setTitle(diary.title);
+    setContent(diary.content);
+    setShowModal(true);
   };
 
   const handleDeleteClick = async (id) => {
@@ -85,16 +73,7 @@ function ImageUpload() {
     }
   };
 
-  const handleShowModal = (id) => {
-    const diaryToEdit = diaries.find((diary) => diary._id === id);
-    if (diaryToEdit) {
-      setShowModal({ id, show: true });
-      setTitle(diaryToEdit.title);
-      setContent(diaryToEdit.content);
-      
-    }
-  };
-
+  
   const handleCloseModal = () => {
     setShowModal({ id: null, show: false });
     setTitle('');
@@ -103,6 +82,34 @@ function ImageUpload() {
     
   };
 
+  const handleShowModal = (id) => {
+    const diaryToEdit = diaries.find((diary) => diary._id === id);
+    if (diaryToEdit) {
+      setShowModal({ id, show: true });
+      setTitle(diaryToEdit.title);
+      setContent(diaryToEdit.content);
+      // 이미지는 수정시에 변경하지 않도록 둘 것인지 여부에 따라 조정
+    }
+  };
+
+
+  const handleEdit = async () => {
+    try {
+      const formData = new FormData();
+      formData.append('image', image);
+      formData.append('title', title);
+      formData.append('content', content);
+
+      await axios.put(`http://localhost:5000/api/upload/${showModal.id}`, formData);
+
+      // 수정 후 목록 다시 불러오기
+      fetchDiaries();
+      // 수정 상태 초기화
+      handleCloseModal();
+    } catch (error) {
+      console.error('이미지 수정 중 오류 발생:', error);
+    }
+  };
   
 
   return (
@@ -122,21 +129,22 @@ function ImageUpload() {
           <Form.Label>Image:</Form.Label>
           <Form.Control type="file" accept="image/*" onChange={handleImageChange} />
         </Form.Group>
-
-        {showModal.id ? (
-        <button  variant="primary" onClick={handleDiarySubmit}>
-         일기 등록
-        </button >
-        ) : (
-          <button  variant="primary" onClick={handleEdit}>
-          일기 수정
-        </button >
-        )}
+        
         
       </Form>
+      {showModal.id ? (
+        <Button variant="primary" onClick={handleEditClick}>
+         일기 수정
+        </Button>
+        ) : (
+          <Button variant="primary" onClick={handleDiarySubmit}>
+          일기 등록
+        </Button>
+        )}
 
 
-
+      
+        {/* 수정 모달 */}
       <ul>
         {diaries.map((diary) => (
           <li key={diary._id}>
