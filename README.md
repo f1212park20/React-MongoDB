@@ -20,7 +20,7 @@
   <table>
     <tr>
       <ol>
-        <li></li><td>npm install bootstrap</td></li>
+        <li><td>npm install bootstrap</td></li>
         <li><td>npm install axios</td></li>
         <li></li><td>npm install express mysql body-parser multer</td></li>
         <li><td>npm install mongodb</td></li>
