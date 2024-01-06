@@ -71,7 +71,7 @@
   <table>
     <tr>restful api</tr>
     <td>
-      GET:화면단 출력  
+      GET:화면단 출력</br> 
       POST:데이터 전송</br>  
       PUT: 데이터 업데이트</br>  
       DELETE:데이터 삭제</br>  
