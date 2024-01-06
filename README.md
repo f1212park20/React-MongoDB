@@ -42,7 +42,8 @@
       },
     </td>
     <td>
-      설명:npm run server와 npm start를 동시에 실행
+      설명:npm run server와 npm start를 동시에 실행</br>  
+      설명:실행시 npm run dev 실행</br>  
     </td>    
   </table>
 </div>
