@@ -19,12 +19,12 @@
   <h1>1.설치명령어</h1>
   <table>
     <tr>
-      <ol>
-        <li><td>npm install bootstrap</td></li>
-        <li><td>npm install axios</td></li>
-        <li></li><td>npm install express mysql body-parser multer</td></li>
-        <li><td>npm install mongodb</td></li>
-      </ol>  
+     
+        <td>npm install bootstrap</td>
+        <td>npm install axios</td>
+        <td>npm install express mysql body-parser multer</td>
+        <td>npm install mongodb</td>
+       
     </tr>
   </table>  
 </div>
