@@ -19,15 +19,17 @@
   <h1>1.설치명령어</h1>
   <table>
     <tr>
-      <td>npm install bootstrap</td>
-      <td>npm install axios</td>
-      <td>npm install express mysql body-parser multer</td>
-      <td>npm install mongodb</td>
+      <ol>
+        <li></li><td>npm install bootstrap</td></li>
+        <li><td>npm install axios</td></li>
+        <li></li><td>npm install express mysql body-parser multer</td></li>
+        <li><td>npm install mongodb</td></li>
+      </ol>  
     </tr>
   </table>  
 </div>
 
-<div>
+<div align='center'>
   <h1>2. 설정</h1>
   <table>
     <tr>packjson.js 파일 설정</tr>
