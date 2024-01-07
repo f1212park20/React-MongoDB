@@ -82,5 +82,6 @@
       DELETE:데이터 삭제</br>  
     </td>
   </table>
+  <h2>rest api : https://www.youtube.com/watch?v=4DxHX95Lq2U</h2>
 </div>
 
