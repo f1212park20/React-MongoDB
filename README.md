@@ -1,5 +1,5 @@
 <div align='center'>
-  <h1>DB Connect</h1>
+  <h1>DB Connection</h1>
 </div>
 
 <div align='center'>
