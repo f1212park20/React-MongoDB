@@ -74,7 +74,7 @@
 <div align='center'>
   <h1>4.기본지식</h1>
   <table>
-    <tr>restful api</tr>
+    <tr>rest api</tr>
     <td>
       GET:화면단 출력</br> 
       POST:데이터 전송</br>  
